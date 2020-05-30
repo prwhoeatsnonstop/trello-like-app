@@ -2,7 +2,7 @@
 
 ## Challenge
 ```
-Build a trello-like-app using ***only*** web components aside from vanilla HTML, CSS and JS
+Build a trello-like-app using *** only *** web components aside from vanilla HTML, CSS and JS
 ```
 
 ## How to run
