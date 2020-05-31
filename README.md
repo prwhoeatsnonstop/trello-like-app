@@ -14,7 +14,7 @@ cd trello-like-app
 open with live server using Visual Studio Code
 ```
 
-##### Task lists
+## Task lists
 - [x] display all columns with all cards
 - [ ] create a new card
 - [ ] modify a card
@@ -25,4 +25,9 @@ open with live server using Visual Studio Code
 - [ ] search for any keywords presents on one or multiple cards
 - [ ] drag and drop a card from one column to another
 - [ ] click on a card to see its description
+
+## Furthers
+- [ ] Install JSON Server
+- [ ] Add Unit Testing with Jest/Mocha
+
 
