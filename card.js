@@ -30,13 +30,20 @@ template.innerHTML = `
         top: 5px;
         right: 88px;
     }
+
+    #submit {
+        right: 5px;
+    }
 </style>
 <div class='user-card'>
     <h3></h3>
-    <div class='input'>
-    <input></input>
+    <div>
+        <input class="input"></input>
     </div>
-    <button id="submit">Add card</button>
+        <input type="submit" value="Add" id="submitButton">
+    <div>
+        <p id='content'></p>
+    </div>
 </div>
 `;
 
@@ -48,8 +55,18 @@ class UserCard extends HTMLElement {
         this.shadowRoot.appendChild(template.content.
             cloneNode(true));
         this.shadowRoot.querySelector('h3').innerText = this.getAttribute('name');
+        let inputField = this.shadowRoot.querySelector('.input').innerHTML;
+        let content = this.shadowRoot.querySelector('#content').innerHTML;
     }
-}
+
+    getInput = () => {
+        return content = inputField;
+    };
+
+    connectedCallback(){
+        this.shadowRoot.querySelector('#submitButton').addEventListener('click', () => this.getInput());
+      };
+};
 
 window.customElements.define('user-card', UserCard);
 
