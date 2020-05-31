@@ -22,11 +22,19 @@ template.innerHTML = `
         grid-template-columns: 1fr 2fr;
         grid-gap: 10px;
         margin-bottom: 15px;
-}
+    }
+
+    .input {
+        position: relative;
+        margin-top: 40px;
+        top: 5px;
+        right: 88px;
+    }
 </style>
 <div class='user-card'>
     <h3></h3>
     <div class='input'>
+    <input></input>
     </div>
     <button id="submit">Add card</button>
 </div>
