@@ -17,17 +17,16 @@ template.innerHTML = `
     .user-card {
         font-family: 'Arial', sans-serif;
         background: #f4f4f4;
-        width: 500px;
+        width: 250px;
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-gap: 10px;
         margin-bottom: 15px;
-        border-bottom: darkorchid 5px solid;
 }
 </style>
 <div class='user-card'>
     <h3></h3>
-    <div class='content'>
+    <div class='input'>
     </div>
     <button id="submit">Add card</button>
 </div>
@@ -40,9 +39,7 @@ class UserCard extends HTMLElement {
         this.attachShadow({ mode: 'open'})
         this.shadowRoot.appendChild(template.content.
             cloneNode(true));
-        // this.innerHTML = `${this.getAttribute('title')}`;
         this.shadowRoot.querySelector('h3').innerText = this.getAttribute('name');
-        // this.shadowRoot.querySelector('p').innerText = this.getAttribute('content');
     }
 }
 
